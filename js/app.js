@@ -467,7 +467,7 @@ const ZeelotApp = {
         </div>
       </section>
 
-      <!-- STRATEGIC INSIGHTS & ARTICLES (MATCHING SCREENSHOT) -->
+      <!-- THOUGHT LEADERSHIP / STRATEGIC INSIGHTS (COMMENTED OUT FOR NOW)
       <section class="insights-section" id="insights">
         <div class="container">
           <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
@@ -506,6 +506,7 @@ const ZeelotApp = {
           </div>
         </div>
       </section>
+      -->
 
       <!-- TESTIMONIALS & PROSPECTIVE CLIENT IMPACT (DARK IN SCREENSHOT) -->
       <section class="testimonials-section" id="clients">
@@ -752,9 +753,9 @@ const ZeelotApp = {
 
           <ul class="t2-nav" id="t2NavMenu">
             <li class="drawer-header-item">
-              <div class="t2-drawer-header-row">
-                <span class="t2-drawer-header-title">ZEELOT MENU</span>
-                <button class="t2-drawer-close-btn" id="drawerCloseT2" aria-label="Close menu">✕</button>
+              <div class="drawer-header-row">
+                <span class="drawer-header-title">ZEELOT MENU</span>
+                <button class="drawer-close-btn" id="drawerCloseT2" aria-label="Close menu">✕</button>
               </div>
             </li>
             <li><a href="#t2-hero" class="t2-nav-link active">Home</a></li>
