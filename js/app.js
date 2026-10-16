@@ -1209,7 +1209,7 @@ const ZeelotApp = {
             <div class="auto-overflow-carousel" id="z3AutoCarousel" data-interval="2800">
               ${d.strategicPillars[0].areas.map(a => `
                 <div class="carousel-card" style="background: #11141E; border: 1px solid #FF001E; padding: 24px; border-radius: 6px;">
-                  <div style="color: #FF001E; font-family: monospace; font-size: 0.8rem; margin-bottom: 8px;">NODE_ID: ${a.name.substring(0,3).toUpperCase()}</div>
+                  <div style="color: #FF001E; font-family: monospace; font-size: 0.8rem; margin-bottom: 8px;">NODE_ID: ${a.name.substring(0, 3).toUpperCase()}</div>
                   <h4 style="font-size: 1.2rem; color: #FFF; margin-bottom: 10px;">${a.name}</h4>
                   <p style="font-size: 0.85rem; color: #8E9AA8; line-height: 1.5;">${a.desc}</p>
                 </div>
