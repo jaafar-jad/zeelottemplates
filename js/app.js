@@ -97,9 +97,7 @@ const ZeelotApp = {
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-content">
-            <div class="hero-badge">
-              <span>●</span> STRATEGIC EXPANSION • AUGUST 18, 2026
-            </div>
+          
             <h1 class="hero-title">
               MAKE YOUR ENTERPRISE <span>INNOVATE BOLDER</span>
             </h1>
