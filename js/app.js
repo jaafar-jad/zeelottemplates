@@ -789,9 +789,7 @@ const ZeelotApp = {
 
             <!-- RIGHT: HERO HEADLINE & PITCH -->
             <div class="t2-hero-text">
-              <div class="t2-hero-subtitle">
-                <span>⚡</span> STRATEGIC INNOVATION & EXPANSION • AUGUST 18, 2026
-              </div>
+              
               <h1 class="t2-hero-title">
                 WE ENGINEER ROBOTICS & DIGITAL <span>THE WAY YOU WANT FOR AFRICA</span>
               </h1>
