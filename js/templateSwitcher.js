@@ -64,13 +64,6 @@ const TemplateEngine = {
           </div>
           <span class="switcher-tag">Z2</span>
         </div>
-        <div class="switcher-option ${this.currentTemplate === 'z3' ? 'active' : ''}" data-target-template="z3">
-          <div class="switcher-option-info">
-            <h5>Z3: Cybernetic Robotics</h5>
-            <p>High-Tech Dark Grid • Awaiting SS3</p>
-          </div>
-          <span class="switcher-tag">Z3</span>
-        </div>
       </div>
       
       <button class="switcher-pill-btn" id="toggleSwitcherBtn" title="Switch between Z1, Z2, Z3 layouts">

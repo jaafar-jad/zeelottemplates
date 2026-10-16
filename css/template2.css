@@ -115,19 +115,86 @@
 .t2-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .t2-nav-link {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 700;
   color: #334155;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .t2-nav-link:hover, .t2-nav-link.active {
   color: #1C58F2;
+}
+
+/* Template 2 Mobile Toggle & Drawer */
+.t2-mobile-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+  color: #0F172A;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+.t2-mobile-toggle:hover {
+  background: #F1F5F9;
+  border-color: #94A3B8;
+}
+
+@media (max-width: 1180px) {
+  .t2-mobile-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .t2-nav {
+    position: fixed;
+    top: 84px;
+    left: -100%;
+    width: 290px;
+    height: calc(100vh - 84px);
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+    border-right: 1px solid #E2E8F0;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    gap: 0;
+  }
+
+  .t2-nav.open {
+    left: 0 !important;
+  }
+
+  .t2-nav li {
+    width: 100%;
+  }
+
+  .t2-nav-link {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid #F1F5F9;
+    font-size: 1rem;
+    color: #1E293B;
+  }
+
+  .t2-header .btn-t2-primary {
+    display: none !important;
+  }
 }
 
 /* Template 2 Hero Section */

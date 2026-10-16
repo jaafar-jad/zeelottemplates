@@ -54,7 +54,7 @@ const siteData = {
     heroIndustrial: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1920&q=85",
     heroRoboticsLab: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=85",
     heroMeeting: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=85",
-    aboutRoboticsArm: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=85",
+    aboutRoboticsArm: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=80",
     aboutSoftwareWorkspace: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=85",
     whyChooseUs: "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=1000&q=85"
   },
@@ -173,6 +173,7 @@ const siteData = {
       clientType: "Industrial Manufacturing",
       desc: "High-speed computer-vision robotic arm deployed for 99.8% precision sorting on packaging lines.",
       imageKeyword: "robotic-arm",
+      imageUrl: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=800&q=85",
       tags: ["Robotics", "Industrial", "Computer Vision"]
     },
     {
@@ -182,6 +183,7 @@ const siteData = {
       clientType: "Government & Institutions",
       desc: "Autonomous night-vision surveillance drone with automated thermal docking station.",
       imageKeyword: "surveillance-drone",
+      imageUrl: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=85",
       tags: ["Surveillance", "AI", "Autonomous"]
     },
     {
@@ -191,6 +193,7 @@ const siteData = {
       clientType: "Corporate & FMCG",
       desc: "Unified cloud ERP coordinating multi-warehouse inventory across 14 commercial depots.",
       imageKeyword: "cloud-erp",
+      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=85",
       tags: ["Software", "ERP", "Inventory"]
     },
     {
@@ -200,6 +203,7 @@ const siteData = {
       clientType: "Educational Institutions",
       desc: "Integrated student information system, grade processing, and smart gate access control.",
       imageKeyword: "campus-software",
+      imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=85",
       tags: ["EdTech", "Portals", "Automated"]
     },
     {
@@ -209,6 +213,7 @@ const siteData = {
       clientType: "Individuals & Real Estate",
       desc: "Z-Wave and Zigbee centralized touch panel controlling biometric locks, lights, and AC units.",
       imageKeyword: "smarthome-hub",
+      imageUrl: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=85",
       tags: ["IoT", "Smart Devices", "Energy"]
     },
     {
@@ -218,6 +223,7 @@ const siteData = {
       clientType: "Schools & STEM Centers",
       desc: "Modular robotics kit equipped with microcontrollers, ultrasonic sensors, and block-coding curriculum.",
       imageKeyword: "stem-robotics",
+      imageUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=85",
       tags: ["Training", "Robotics", "STEM"]
     }
   ],
@@ -229,6 +235,7 @@ const siteData = {
       department: "Business Development Department",
       bio: "Driving the strategic commercial expansion, partnership frameworks, and market entry for Zeelot Innovation Limited across West Africa.",
       photo: "praise-bassey",
+      imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85",
       badge: "Author of Expansion Strategy"
     },
     {
@@ -237,6 +244,7 @@ const siteData = {
       department: "Robotics & Hardware Systems",
       bio: "Ph.D. in Mechatronics with 12+ years pioneering industrial robotic manipulators and intelligent autonomous rovers.",
       photo: "arinze-okonjo",
+      imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=85",
       badge: "Robotics Lead"
     },
     {
@@ -245,6 +253,7 @@ const siteData = {
       department: "Digital Solutions Division",
       bio: "Enterprise software architect specializing in scalable cloud ERPs, fintech integrations, and mission-critical web platforms.",
       photo: "fatimah-bello",
+      imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=85",
       badge: "Software Lead"
     },
     {
@@ -253,6 +262,7 @@ const siteData = {
       department: "Gadgets & Hardware Distribution",
       bio: "Leading OEM partnerships, bulk corporate hardware provisioning, and SLA technical support infrastructure.",
       photo: "david-kalu",
+      imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=85",
       badge: "Supply Chain Lead"
     }
   ],
@@ -264,6 +274,7 @@ const siteData = {
       author: "Praise Bassey",
       category: "Robotics Strategy",
       readTime: "5 min read",
+      imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=85",
       summary: "Exploring how leapfrogging legacy automation directly into intelligent, modular robotics can transform Nigerian manufacturing and logistics."
     },
     {
@@ -272,6 +283,7 @@ const siteData = {
       author: "Zeelot Executive Desk",
       category: "Business Architecture",
       readTime: "4 min read",
+      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=85",
       summary: "A breakdown of Zeelot's pragmatic strategic trajectory—leveraging high-volume digital solutions and gadgets to fuel robotics engineering."
     },
     {
@@ -280,6 +292,7 @@ const siteData = {
       author: "Digital Solutions Team",
       category: "Software Solutions",
       readTime: "6 min read",
+      imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=85",
       summary: "How digitized attendance, automated fee processing, and parent engagement platforms eliminate up to 70% of school administrative overhead."
     }
   ],
@@ -290,21 +303,21 @@ const siteData = {
       author: "Engr. Mustapha Aliyu",
       title: "Technical Director",
       company: "Apex Industrial Conglomerate",
-      avatar: "client-1"
+      avatarUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=85"
     },
     {
       quote: "Their proposal for our automated sorting and inventory management demonstrated exceptional technical clarity and business acumen. Zeelot is poised to lead Nigeria's tech revolution.",
       author: "Chinyere Nwosu",
       title: "Operations Head",
       company: "Westbridge Logistics Hub",
-      avatar: "client-2"
+      avatarUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=85"
     },
     {
       quote: "The combination of STEM robotics training and school management software brings immense value to modern educational institutions looking to modernize.",
       author: "Dr. Babatunde Lawson",
       title: "Council Chairman",
       company: "Premier Academy Alliance",
-      avatar: "client-3"
+      avatarUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=85"
     }
   ],
 

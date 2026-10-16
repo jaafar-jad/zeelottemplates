@@ -91,11 +91,9 @@ const ZeelotApp = {
         </div>
       </header>
 
-      <!-- HERO SECTION -->
+      <!-- HERO SECTION (WITH HIGH-RES UNPLASH ROBOTICS BACKGROUND) -->
       <section class="hero-section" id="hero">
-        <div class="hero-background-art">
-          ${ZeelotGraphics.heroLab()}
-        </div>
+        <div class="hero-background-art" style="background-image: linear-gradient(90deg, rgba(11, 12, 16, 0.94) 0%, rgba(11, 12, 16, 0.8) 55%, rgba(11, 12, 16, 0.45) 100%), url('${d.mediaImages.heroIndustrial}'); background-size: cover; background-position: center;"></div>
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-content">
@@ -197,10 +195,18 @@ const ZeelotApp = {
               <a href="#pillars" class="btn btn-primary">EXPLORE STRATEGIC ROADMAP</a>
             </div>
 
-            <!-- RIGHT SHOWCASE CARD (HIGH TECH ILLUSTRATION) -->
+            <!-- RIGHT SHOWCASE CARD (DUAL PHOTO COLLAGE MATCHING SCREENSHOT 1) -->
             <div class="about-visual-col">
-              <div class="about-showcase-card">
-                ${ZeelotGraphics.aboutShowcase()}
+              <div class="about-dual-collage">
+                <div class="about-floating-badge">
+                  ⚡ STRATEGIC EXPANSION 2026
+                </div>
+                <div class="about-photo-top">
+                  <img src="${d.mediaImages.aboutRoboticsArm}" alt="Industrial Robotics Engineering" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=80';" />
+                </div>
+                <div class="about-photo-bottom">
+                  <img src="${d.mediaImages.aboutSoftwareWorkspace}" alt="Software & Systems Innovation" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80';" />
+                </div>
               </div>
             </div>
           </div>
@@ -244,7 +250,7 @@ const ZeelotApp = {
               ${d.projectsShowcase.map(proj => `
                 <div class="carousel-card project-card" data-category="${proj.tags.join(' ')}">
                   <div class="project-thumb">
-                    ${ZeelotGraphics.projectVisual(proj.imageKeyword)}
+                    <img src="${proj.imageUrl}" alt="${proj.title}" class="project-img-cover" loading="lazy" />
                     <span class="project-badge">${proj.tags[0]}</span>
                   </div>
                   <div class="project-body">
@@ -439,7 +445,7 @@ const ZeelotApp = {
             ${d.leadership.map(member => `
               <div class="carousel-card team-card">
                 <div class="team-photo">
-                  ${ZeelotGraphics.teamAvatar(member.photo, member.name)}
+                  <img src="${member.imageUrl}" alt="${member.name}" class="team-img-cover" loading="lazy" />
                   <span class="team-badge">${member.badge}</span>
                 </div>
                 <div class="team-body">
@@ -475,7 +481,7 @@ const ZeelotApp = {
             ${d.insights.map((item, idx) => `
               <div class="carousel-card insight-card">
                 <div class="insight-thumb">
-                  ${ZeelotGraphics.projectVisual(idx === 0 ? 'robotic-arm' : idx === 1 ? 'cloud-erp' : 'campus-software')}
+                  <img src="${item.imageUrl}" alt="${item.title}" class="insight-img-cover" loading="lazy" />
                 </div>
                 <div class="insight-body">
                   <div class="insight-meta">
@@ -513,7 +519,7 @@ const ZeelotApp = {
                 <div class="quote-icon-badge">“</div>
                 <p class="testimonial-quote">“${t.quote}”</p>
                 <div class="testimonial-author-block">
-                  <div class="author-avatar">${t.author[0]}</div>
+                  <div class="author-avatar" style="background-image: url('${t.avatarUrl}');"></div>
                   <div class="author-meta">
                     <span class="author-name">${t.author}</span>
                     <span class="author-role">${t.title}, ${t.company}</span>
@@ -755,16 +761,14 @@ const ZeelotApp = {
 
           <div style="display: flex; align-items: center; gap: 14px;">
             <a href="#t2-contact" class="btn-t2-primary" style="padding: 10px 20px; font-size: 0.8rem;">GET IN TOUCH</a>
-            <button class="mobile-toggle" id="t2MobileNavToggle" style="color: #0F172A;" aria-label="Toggle Navigation">☰</button>
+            <button class="t2-mobile-toggle" id="t2MobileNavToggle" aria-label="Toggle Navigation">☰</button>
           </div>
         </div>
       </header>
 
-      <!-- T2 HERO SECTION (MATCHING SCREENSHOT 2) -->
+      <!-- T2 HERO SECTION (MATCHING SCREENSHOT 2 WITH UNPLASH HERO BACKGROUND) -->
       <section class="t2-hero" id="t2-hero">
-        <div class="t2-hero-bg">
-          ${ZeelotGraphics.heroLab()}
-        </div>
+        <div class="t2-hero-bg" style="background-image: linear-gradient(135deg, rgba(11, 15, 25, 0.94) 0%, rgba(13, 20, 36, 0.88) 100%), url('${d.mediaImages.heroMeeting}'); background-size: cover; background-position: center; opacity: 1;"></div>
         <div class="container">
           <div class="t2-hero-grid">
             <!-- LEFT: INTERACTIVE PLAY BUTTON (FROM SCREENSHOT 2) -->
@@ -819,10 +823,10 @@ const ZeelotApp = {
             <!-- LEFT: 2 PHOTOS COLLAGE WITH AWARD BADGE -->
             <div class="t2-about-media">
               <div class="t2-photo-tall">
-                ${ZeelotGraphics.aboutShowcase()}
+                <img src="${d.mediaImages.aboutRoboticsArm}" alt="Robotics Innovation" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
               </div>
               <div class="t2-photo-short">
-                ${ZeelotGraphics.projectVisual('cloud-erp')}
+                <img src="${d.mediaImages.aboutSoftwareWorkspace}" alt="Software Engineering" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
               </div>
               <div class="t2-award-badge">
                 <div style="font-size: 1.5rem; font-weight: 900;">100%</div>
@@ -880,7 +884,7 @@ const ZeelotApp = {
               ${d.leadership.slice(0, 3).map(m => `
                 <div class="carousel-card t2-team-card">
                   <div class="t2-team-img">
-                    ${ZeelotGraphics.teamAvatar(m.photo, m.name)}
+                    <img src="${m.imageUrl}" alt="${m.name}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
                   </div>
                   <div class="t2-team-info">
                     <h3 class="t2-team-name">${m.name}</h3>
@@ -927,7 +931,7 @@ const ZeelotApp = {
           <div class="auto-overflow-carousel" id="t2PortfolioCarousel" data-interval="3300">
             ${d.projectsShowcase.map(proj => `
               <div class="carousel-card t2-port-card">
-                ${ZeelotGraphics.projectVisual(proj.imageKeyword)}
+                <img src="${proj.imageUrl}" alt="${proj.title}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
                 <div class="t2-port-overlay">
                   <span>${proj.category}</span>
                   <h4>${proj.title}</h4>
@@ -945,7 +949,7 @@ const ZeelotApp = {
             <!-- LEFT: WHY CHOOSE US -->
             <div class="t2-why-col">
               <div class="t2-why-img">
-                ${ZeelotGraphics.heroLab()}
+                <img src="${d.mediaImages.whyChooseUs}" alt="Why Choose Zeelot" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
               </div>
               <h3 style="font-size: 1.5rem; font-weight: 900; color: #0F172A; margin-bottom: 18px;">
                 ${d.whyChooseUs.heading}
@@ -1008,7 +1012,7 @@ const ZeelotApp = {
                   <div class="t2-stars">★★★★★</div>
                   <p class="t2-rev-quote">“${t.quote}”</p>
                   <div class="t2-rev-author">
-                    <div class="t2-rev-avatar">${t.author[0]}</div>
+                    <div class="t2-rev-avatar" style="background-image: url('${t.avatarUrl}'); background-size: cover; background-position: center; border: 2px solid #1C58F2;"></div>
                     <div>
                       <strong style="color: #0F172A; font-size: 0.9rem; display: block;">${t.author}</strong>
                       <span style="color: #64748B; font-size: 0.75rem;">${t.title}, ${t.company}</span>
@@ -1031,7 +1035,7 @@ const ZeelotApp = {
             ${d.insights.map((item, idx) => `
               <div class="carousel-card t2-blog-card">
                 <div class="t2-blog-thumb">
-                  ${ZeelotGraphics.projectVisual(idx === 0 ? 'robotic-arm' : idx === 1 ? 'cloud-erp' : 'campus-software')}
+                  <img src="${item.imageUrl}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
                   <span class="t2-blog-badge">${item.category}</span>
                 </div>
                 <div class="t2-blog-body">
@@ -1224,19 +1228,22 @@ const ZeelotApp = {
     // Mobile Navigation Drawer Toggle (Template 1 & Template 2)
     document.addEventListener('click', (e) => {
       // Template 1
-      if (e.target && e.target.id === 'mobileNavToggle') {
+      const t1Toggle = e.target.closest('#mobileNavToggle');
+      if (t1Toggle) {
         const menu = document.getElementById('navMenu');
         if (menu) menu.classList.toggle('open');
       }
 
       // Template 2
-      if (e.target && e.target.id === 't2MobileNavToggle') {
+      const t2Toggle = e.target.closest('#t2MobileNavToggle');
+      if (t2Toggle) {
         const menu = document.getElementById('t2NavMenu');
         if (menu) menu.classList.toggle('open');
       }
 
       // Close mobile menu on link click
-      if (e.target && (e.target.classList.contains('nav-link') || e.target.classList.contains('t2-nav-link'))) {
+      const navLink = e.target.closest('.nav-link, .t2-nav-link');
+      if (navLink) {
         const menu1 = document.getElementById('navMenu');
         if (menu1) menu1.classList.remove('open');
         const menu2 = document.getElementById('t2NavMenu');
