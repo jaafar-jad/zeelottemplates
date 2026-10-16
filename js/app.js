@@ -79,6 +79,12 @@ const ZeelotApp = {
           </a>
 
           <ul class="nav-menu" id="navMenu">
+            <li class="drawer-header-item">
+              <div class="drawer-header-row">
+                <span class="drawer-header-title">ZEELOT MENU</span>
+                <button class="drawer-close-btn" id="drawerCloseT1" aria-label="Close menu">✕</button>
+              </div>
+            </li>
             ${d.navLinks.map(link => `<li><a href="${link.href}" class="nav-link">${link.label}</a></li>`).join('')}
           </ul>
 
@@ -90,6 +96,7 @@ const ZeelotApp = {
           </div>
         </div>
       </header>
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
       <!-- HERO SECTION (WITH HIGH-RES UNPLASH ROBOTICS BACKGROUND) -->
       <section class="hero-section" id="hero">
@@ -744,6 +751,12 @@ const ZeelotApp = {
           </a>
 
           <ul class="t2-nav" id="t2NavMenu">
+            <li class="drawer-header-item">
+              <div class="t2-drawer-header-row">
+                <span class="t2-drawer-header-title">ZEELOT MENU</span>
+                <button class="t2-drawer-close-btn" id="drawerCloseT2" aria-label="Close menu">✕</button>
+              </div>
+            </li>
             <li><a href="#t2-hero" class="t2-nav-link active">Home</a></li>
             <li><a href="#t2-about" class="t2-nav-link">About Us</a></li>
             <li><a href="#t2-features" class="t2-nav-link">Capabilities</a></li>
@@ -760,6 +773,7 @@ const ZeelotApp = {
           </div>
         </div>
       </header>
+      <div class="drawer-backdrop" id="t2DrawerBackdrop"></div>
 
       <!-- T2 HERO SECTION (MATCHING SCREENSHOT 2 WITH UNPLASH HERO BACKGROUND) -->
       <section class="t2-hero" id="t2-hero">
@@ -1220,29 +1234,88 @@ const ZeelotApp = {
   // INTERACTIVITY & LISTENERS
   // =========================================================================
   attachGlobalListeners() {
-    // Mobile Navigation Drawer Toggle (Template 1 & Template 2)
+    const closeAllDrawers = () => {
+      const menu1 = document.getElementById('navMenu');
+      const toggle1 = document.getElementById('mobileNavToggle');
+      const backdrop1 = document.getElementById('drawerBackdrop');
+      if (menu1) menu1.classList.remove('open');
+      if (toggle1) toggle1.textContent = '☰';
+      if (backdrop1) backdrop1.classList.remove('open');
+
+      const menu2 = document.getElementById('t2NavMenu');
+      const toggle2 = document.getElementById('t2MobileNavToggle');
+      const backdrop2 = document.getElementById('t2DrawerBackdrop');
+      if (menu2) menu2.classList.remove('open');
+      if (toggle2) toggle2.textContent = '☰';
+      if (backdrop2) backdrop2.classList.remove('open');
+
+      document.body.classList.remove('menu-open');
+    };
+
     document.addEventListener('click', (e) => {
-      // Template 1
+      // Template 1 Toggle
       const t1Toggle = e.target.closest('#mobileNavToggle');
       if (t1Toggle) {
+        e.stopPropagation();
         const menu = document.getElementById('navMenu');
-        if (menu) menu.classList.toggle('open');
+        const backdrop = document.getElementById('drawerBackdrop');
+        const isOpen = menu && menu.classList.contains('open');
+
+        if (isOpen) {
+          closeAllDrawers();
+        } else {
+          closeAllDrawers();
+          if (menu) menu.classList.add('open');
+          if (backdrop) backdrop.classList.add('open');
+          t1Toggle.textContent = '✕';
+          document.body.classList.add('menu-open');
+        }
+        return;
       }
 
-      // Template 2
+      // Template 2 Toggle
       const t2Toggle = e.target.closest('#t2MobileNavToggle');
       if (t2Toggle) {
+        e.stopPropagation();
         const menu = document.getElementById('t2NavMenu');
-        if (menu) menu.classList.toggle('open');
+        const backdrop = document.getElementById('t2DrawerBackdrop');
+        const isOpen = menu && menu.classList.contains('open');
+
+        if (isOpen) {
+          closeAllDrawers();
+        } else {
+          closeAllDrawers();
+          if (menu) menu.classList.add('open');
+          if (backdrop) backdrop.classList.add('open');
+          t2Toggle.textContent = '✕';
+          document.body.classList.add('menu-open');
+        }
+        return;
       }
 
-      // Close mobile menu on link click
-      const navLink = e.target.closest('.nav-link, .t2-nav-link');
-      if (navLink) {
-        const menu1 = document.getElementById('navMenu');
-        if (menu1) menu1.classList.remove('open');
-        const menu2 = document.getElementById('t2NavMenu');
-        if (menu2) menu2.classList.remove('open');
+      // Dedicated close buttons inside drawer
+      if (e.target.closest('#drawerCloseT1') || e.target.closest('#drawerCloseT2') || e.target.closest('.drawer-close-btn') || e.target.closest('.t2-drawer-close-btn')) {
+        closeAllDrawers();
+        return;
+      }
+
+      // Click on backdrop overlay
+      if (e.target.closest('#drawerBackdrop') || e.target.closest('#t2DrawerBackdrop')) {
+        closeAllDrawers();
+        return;
+      }
+
+      // Click on any nav link
+      if (e.target.closest('.nav-link, .t2-nav-link')) {
+        closeAllDrawers();
+        return;
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeAllDrawers();
       }
     });
   },
