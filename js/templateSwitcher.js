@@ -17,14 +17,8 @@ const TemplateEngine = {
     z2: {
       id: 'z2',
       name: 'Template 2 (Z2)',
-      tagline: 'Next-Gen Enterprise Portal',
+      tagline: 'Modern Agency & SaaS (Screenshot 2 Match)',
       themeClass: 'theme-z2-enterprise'
-    },
-    z3: {
-      id: 'z3',
-      name: 'Template 3 (Z3)',
-      tagline: 'Cybernetic Robotics Studio',
-      themeClass: 'theme-z3-cyber'
     }
   },
 
@@ -32,6 +26,8 @@ const TemplateEngine = {
     const saved = localStorage.getItem('zeelot_active_template');
     if (saved && this.templates[saved]) {
       this.currentTemplate = saved;
+    } else {
+      this.currentTemplate = 'z1';
     }
     this.renderSwitcherUI();
     this.applyTemplate(this.currentTemplate);
@@ -55,18 +51,18 @@ const TemplateEngine = {
             <h5>Z1: Industrial Red & Black</h5>
             <p>Screenshot 1 Layout • High Impact</p>
           </div>
-          <span class="switcher-tag">ACTIVE</span>
+          <span class="switcher-tag">${this.currentTemplate === 'z1' ? 'ACTIVE' : 'Z1'}</span>
         </div>
         <div class="switcher-option ${this.currentTemplate === 'z2' ? 'active' : ''}" data-target-template="z2">
           <div class="switcher-option-info">
             <h5>Z2: Modern Digital SaaS Agency</h5>
-            <p>Screenshot 2 Layout • Clean Blue & Cards</p>
+            <p>Screenshot 2 Layout • Red & Black Agency</p>
           </div>
-          <span class="switcher-tag">Z2</span>
+          <span class="switcher-tag">${this.currentTemplate === 'z2' ? 'ACTIVE' : 'Z2'}</span>
         </div>
       </div>
       
-      <button class="switcher-pill-btn" id="toggleSwitcherBtn" title="Switch between Z1, Z2, Z3 layouts">
+      <button class="switcher-pill-btn" id="toggleSwitcherBtn" title="Switch between Z1 and Z2 layouts">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M4 6h16M4 12h16M4 18h7"/>
         </svg>

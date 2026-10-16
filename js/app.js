@@ -126,7 +126,7 @@ const ZeelotApp = {
             </div>
           </div>
           <div class="ribbon-actions">
-            <a href="#pillars" class="btn btn-dark btn-sm">OUR 3 PILLARS</a>
+            <a href="#pillars" class="btn btn-dark btn-sm">OUR PILLARS</a>
             <a href="#contact" class="btn btn-outline-white btn-sm">CONTACT LEADERSHIP</a>
           </div>
         </div>
@@ -695,10 +695,7 @@ const ZeelotApp = {
             </div>
           </div>
 
-          <!-- DOCUMENT DISCLAIMER NOTE (FROM PROPOSAL) -->
-          <div class="footer-disclaimer">
-            <strong>PLEASE NOTE:</strong> ${d.strategicRecommendation.disclaimer}
-          </div>
+         
 
           <div class="footer-bottom">
             <div>
@@ -806,7 +803,7 @@ const ZeelotApp = {
               </div>
               <h3 class="t2-feat-title">${feat.title}</h3>
               <p class="t2-feat-desc">${feat.desc}</p>
-              <div style="margin-top: auto; padding-top: 14px; font-size: 0.75rem; font-weight: 700; color: #1C58F2;">
+              <div style="margin-top: auto; padding-top: 14px; font-size: 0.75rem; font-weight: 700; color: #E51920;">
                 ${feat.badge} →
               </div>
             </div>
@@ -869,7 +866,7 @@ const ZeelotApp = {
           <div class="t2-team-grid">
             <!-- LEFT: TEAM PITCH -->
             <div class="t2-team-pitch">
-              <span style="font-size: 0.8rem; font-weight: 800; color: #60A5FA; text-transform: uppercase; letter-spacing: 2px;">TEAM MEMBERS</span>
+              <span style="font-size: 0.8rem; font-weight: 800; color: #FF4D52; text-transform: uppercase; letter-spacing: 2px;">TEAM MEMBERS</span>
               <h2 style="font-size: 2.5rem; font-weight: 900; margin: 10px 0 16px 0; color: #FFFFFF;">OUR TEAM</h2>
               <p style="color: #94A3B8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 26px;">
                 Meet the strategic business leaders and robotics engineers spearheading Zeelot Innovation Limited's market entry across West Africa.
@@ -920,7 +917,7 @@ const ZeelotApp = {
       <!-- PORTFOLIO / "OUR EXCEPTIONAL QUALITY WORK" (SCREENSHOT 2) -->
       <section class="t2-portfolio-section" id="t2-portfolio">
         <div class="container">
-          <span style="font-size: 0.8rem; font-weight: 800; color: #1C58F2; text-transform: uppercase; letter-spacing: 2px;">PROVEN SOLUTIONS</span>
+          <span style="font-size: 0.8rem; font-weight: 800; color: #E51920; text-transform: uppercase; letter-spacing: 2px;">PROVEN SOLUTIONS</span>
           <h2 style="font-size: 2.4rem; font-weight: 900; color: #0F172A; margin: 10px 0;">Our Exceptional Quality Work</h2>
           <p style="color: #64748B; max-width: 650px; margin: 0 auto 30px auto; font-size: 0.95rem;">
             A showcase of bespoke robotics deployments, IoT smart devices, and high-uptime software platforms engineered for African enterprise.
@@ -962,7 +959,7 @@ const ZeelotApp = {
 
             <!-- RIGHT: FREQUENTLY ASK QUESTION ACCORDION -->
             <div>
-              <span style="font-size: 0.8rem; font-weight: 800; color: #1C58F2; text-transform: uppercase; letter-spacing: 2px;">QUESTIONS & CLARIFICATIONS</span>
+              <span style="font-size: 0.8rem; font-weight: 800; color: #E51920; text-transform: uppercase; letter-spacing: 2px;">QUESTIONS & CLARIFICATIONS</span>
               <h3 style="font-size: 1.8rem; font-weight: 900; color: #0F172A; margin: 10px 0 24px 0;">
                 Frequently Ask Question
               </h3>
@@ -990,11 +987,11 @@ const ZeelotApp = {
         </div>
       </section>
 
-      <!-- TESTIMONIALS (SPLIT BLUE BOX + WHITE CARDS MATCHING SCREENSHOT 2) -->
+      <!-- TESTIMONIALS (SPLIT RED BOX + WHITE CARDS MATCHING SCREENSHOT 2) -->
       <section class="t2-testimonials-section" id="t2-testimonials">
         <div class="container">
           <div class="t2-testi-wrapper">
-            <!-- LEFT: BLUE INTRO BOX -->
+            <!-- LEFT: RED INTRO BOX -->
             <div class="t2-testi-intro-box">
               <span style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9;">TESTIMONIALS</span>
               <h3>What Our Clients Say</h3>
@@ -1010,7 +1007,7 @@ const ZeelotApp = {
                   <div class="t2-stars">★★★★★</div>
                   <p class="t2-rev-quote">“${t.quote}”</p>
                   <div class="t2-rev-author">
-                    <div class="t2-rev-avatar" style="background-image: url('${t.avatarUrl}'); background-size: cover; background-position: center; border: 2px solid #1C58F2;"></div>
+                    <div class="t2-rev-avatar" style="background-image: url('${t.avatarUrl}'); background-size: cover; background-position: center; border: 2px solid #E51920;"></div>
                     <div>
                       <strong style="color: #0F172A; font-size: 0.9rem; display: block;">${t.author}</strong>
                       <span style="color: #64748B; font-size: 0.75rem;">${t.title}, ${t.company}</span>
@@ -1026,7 +1023,7 @@ const ZeelotApp = {
       <!-- RECENT POSTS / BLOG (MATCHING SCREENSHOT 2) -->
       <section class="t2-blog-section" id="t2-blog">
         <div class="container">
-          <span style="font-size: 0.8rem; font-weight: 800; color: #1C58F2; text-transform: uppercase; letter-spacing: 2px;">OUR BLOG</span>
+          <span style="font-size: 0.8rem; font-weight: 800; color: #E51920; text-transform: uppercase; letter-spacing: 2px;">OUR BLOG</span>
           <h2 style="font-size: 2.3rem; font-weight: 900; color: #0F172A; margin: 10px 0 34px 0;">Recent Posts</h2>
 
           <div class="auto-overflow-carousel" id="t2BlogCarousel" data-interval="3700">
@@ -1070,7 +1067,7 @@ const ZeelotApp = {
           <div class="t2-footer-grid">
             <div class="t2-f-col">
               <div style="font-size: 1.4rem; font-weight: 900; color: #FFF; margin-bottom: 14px;">
-                ZEELOT<span style="color: #3B82F6;">.</span>
+                ZEELOT<span style="color: #E51920;">.</span>
               </div>
               <p style="line-height: 1.6; font-size: 0.85rem; color: #94A3B8; margin-bottom: 18px;">
                 ${d.company.overview}

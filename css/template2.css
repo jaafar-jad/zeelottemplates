@@ -5,16 +5,16 @@
 
 /* Template 2 Theme Variables */
 .theme-z2-agency {
-  --z2-primary: #1C58F2;
+  --z2-primary: #E51920;
   --z2-accent-red: #E51920;
   --z2-gradient-hero: linear-gradient(135deg, rgba(16, 24, 40, 0.92) 0%, rgba(11, 15, 25, 0.96) 100%);
-  --z2-gradient-bar: linear-gradient(90deg, #1C58F2 0%, #3B71F7 50%, #6830F5 100%);
-  --z2-gradient-banner: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --z2-gradient-bar: linear-gradient(90deg, #E51920 0%, #FF2A32 50%, #B30F15 100%);
+  --z2-gradient-banner: linear-gradient(135deg, #E51920 0%, #8B0A0E 100%);
   --z2-bg-dark: #0D111A;
   --z2-bg-card-dark: #151A26;
   --z2-bg-light: #F8FAFC;
   --z2-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --z2-card-hover: 0 16px 36px rgba(28, 88, 242, 0.15);
+  --z2-card-hover: 0 16px 36px rgba(229, 25, 32, );
 }
 
 /* Template 2 Top Bar */
@@ -24,6 +24,12 @@
   font-size: 0.8rem;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 992px) {
+  .t2-topbar {
+    display: none !important;
+  }
 }
 
 .t2-topbar .container {
@@ -56,7 +62,7 @@
 }
 
 .t2-social-btn:hover {
-  color: #3B82F6;
+  color: #FF333A;
 }
 
 /* Template 2 Header */
@@ -85,7 +91,7 @@
 .t2-brand-symbol {
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, #1C58F2, #E51920);
+  background: linear-gradient(135deg, #E51920, #E51920);
   border-radius: 8px;
   color: #FFFFFF;
   display: flex;
@@ -93,7 +99,7 @@
   justify-content: center;
   font-weight: 900;
   font-size: 1.35rem;
-  box-shadow: 0 4px 12px rgba(28, 88, 242, 0.3);
+  box-shadow: 0 4px 12px rgba(229, 25, 32, );
 }
 
 .t2-brand-name {
@@ -129,7 +135,7 @@
 }
 
 .t2-nav-link:hover, .t2-nav-link.active {
-  color: #1C58F2;
+  color: #E51920;
 }
 
 /* Template 2 Mobile Toggle & Drawer */
@@ -239,20 +245,20 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
-  box-shadow: 0 0 0 12px rgba(28, 88, 242, 0.3), 0 0 0 24px rgba(28, 88, 242, 0.15);
+  box-shadow: 0 0 0 12px rgba(229, 25, 32, ), 0 0 0 24px rgba(229, 25, 32, );
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .t2-play-btn:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 0 16px rgba(28, 88, 242, 0.4), 0 0 0 30px rgba(28, 88, 242, 0.2);
+  box-shadow: 0 0 0 16px rgba(229, 25, 32, ), 0 0 0 30px rgba(229, 25, 32, );
 }
 
 .t2-hero-text {
@@ -264,7 +270,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #60A5FA;
+  color: #FF4D52;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -280,7 +286,7 @@
 }
 
 .t2-hero-title span {
-  color: #3B82F6;
+  color: #FF333A;
 }
 
 .t2-hero-desc {
@@ -297,7 +303,7 @@
 }
 
 .btn-t2-primary {
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
   padding: 14px 28px;
   border-radius: 4px;
@@ -307,14 +313,14 @@
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 6px 20px rgba(28, 88, 242, 0.35);
+  box-shadow: 0 6px 20px rgba(229, 25, 32, );
   transition: all 0.25s ease;
 }
 
 .btn-t2-primary:hover {
-  background: #1545C6;
+  background: #B30F15;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(28, 88, 242, 0.45);
+  box-shadow: 0 8px 25px rgba(229, 25, 32, );
 }
 
 .btn-t2-outline {
@@ -354,7 +360,7 @@
   padding: 32px 24px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid #E2E8F0;
-  border-top: 4px solid #1C58F2;
+  border-top: 4px solid #E51920;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -362,15 +368,15 @@
 
 .t2-feature-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(28, 88, 242, 0.14);
+  box-shadow: 0 18px 40px rgba(229, 25, 32, );
 }
 
 .t2-feat-icon {
   width: 52px;
   height: 52px;
   border-radius: 8px;
-  background: #EFF6FF;
-  color: #1C58F2;
+  background: #FFF1F2;
+  color: #E51920;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,11 +444,11 @@
   position: absolute;
   top: 40px;
   left: -15px;
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
   padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(28, 88, 242, 0.4);
+  box-shadow: 0 10px 25px rgba(229, 25, 32, );
   text-align: center;
   font-size: 0.8rem;
   font-weight: 800;
@@ -452,7 +458,7 @@
   font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #1C58F2;
+  color: #E51920;
   letter-spacing: 2px;
   margin-bottom: 12px;
   display: block;
@@ -490,8 +496,8 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #EFF6FF;
-  color: #1C58F2;
+  background: #FFF1F2;
+  color: #E51920;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -546,7 +552,7 @@
 .t2-team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-  border-color: #1C58F2;
+  border-color: #E51920;
 }
 
 .t2-team-img {
@@ -569,7 +575,7 @@
 
 .t2-team-role {
   font-size: 0.775rem;
-  color: #60A5FA;
+  color: #FF4D52;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -585,7 +591,7 @@
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -595,7 +601,7 @@
 }
 
 .t2-t-soc:hover {
-  background: #3B82F6;
+  background: #FF333A;
 }
 
 /* ==========================================================================
@@ -603,7 +609,7 @@
    ========================================================================== */
 
 .t2-gradient-banner {
-  background: linear-gradient(135deg, #1C58F2 0%, #4338CA 50%, #6D28D9 100%);
+  background: linear-gradient(135deg, #E51920 0%, #B30F15 50%, #750005 100%);
   padding: 50px 0;
   color: #FFFFFF;
 }
@@ -703,7 +709,7 @@
 
 .t2-port-overlay span {
   font-size: 0.75rem;
-  color: #60A5FA;
+  color: #FF4D52;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -737,7 +743,7 @@
 .t2-why-point {
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
-  border-left: 4px solid #1C58F2;
+  border-left: 4px solid #E51920;
   padding: 16px 20px;
   border-radius: 4px;
   margin-bottom: 14px;
@@ -783,7 +789,7 @@
 }
 
 .t2-faq-item.active .t2-faq-header {
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
 }
 
@@ -826,7 +832,7 @@
 }
 
 .t2-testi-intro-box {
-  background: linear-gradient(135deg, #1C58F2 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #E51920 0%, #FF333A 100%);
   border-radius: 8px;
   padding: 40px;
   color: #FFFFFF;
@@ -878,13 +884,13 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #EFF6FF;
-  border: 2px solid #1C58F2;
+  background: #FFF1F2;
+  border: 2px solid #E51920;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #1C58F2;
+  color: #E51920;
 }
 
 /* ==========================================================================
@@ -928,7 +934,7 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #1C58F2;
+  background: #E51920;
   color: #FFFFFF;
   padding: 4px 10px;
   border-radius: 4px;
@@ -963,7 +969,7 @@
 .t2-blog-link {
   font-size: 0.8rem;
   font-weight: 800;
-  color: #1C58F2;
+  color: #E51920;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
@@ -975,7 +981,7 @@
    ========================================================================== */
 
 .t2-newsletter-banner {
-  background: linear-gradient(135deg, #1C58F2 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #E51920 0%, #FF333A 100%);
   padding: 40px 0;
   color: #FFFFFF;
   text-align: center;
@@ -1049,7 +1055,7 @@
 }
 
 .t2-f-links a:hover {
-  color: #3B82F6;
+  color: #FF333A;
 }
 
 /* Responsive Rules for Template 2 */
