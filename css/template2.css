@@ -196,36 +196,43 @@
   color: #FFFFFF;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1200px) {
   .t2-mobile-toggle {
-    display: inline-flex !important;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1025 !important;
     width: 42px;
     height: 42px;
+    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    color: #0F172A;
+    font-size: 1.4rem;
+    cursor: pointer;
   }
 
   .t2-nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    max-width: 85vw;
-    height: 100vh;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px 20px;
-    border-right: 1px solid #E2E8F0;
-    box-shadow: 10px 0 35px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 1020;
-    gap: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
+    position: fixed !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 300px !important;
+    max-width: 85vw !important;
+    height: 100vh !important;
+    background-color: var(--carbon-black) !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 24px 20px !important;
+    border-right: 1px solid var(--border-dark) !important;
+    box-shadow: 10px 0 35px rgba(0, 0, 0, 0.6) !important;
+    transition: left 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 1020 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
   }
 
   .t2-nav.open {
@@ -233,16 +240,23 @@
   }
 
   .t2-nav li {
-    width: 100%;
+    width: 100% !important;
   }
 
   .t2-nav-link {
-    display: block;
-    width: 100%;
-    padding: 14px 0;
-    border-bottom: 1px solid #F1F5F9;
-    font-size: 1rem;
-    color: #1E293B;
+    display: block !important;
+    width: 100% !important;
+    padding: 14px 0 !important;
+    border-bottom: 1px solid var(--border-dark) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+    color: rgba(255, 255, 255, 0.88) !important;
+  }
+
+  .t2-nav-link:hover, .t2-nav-link.active {
+    color: var(--primary-red) !important;
   }
 
   .t2-header .btn-t2-primary {

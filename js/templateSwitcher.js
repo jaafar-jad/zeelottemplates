@@ -48,16 +48,14 @@ const TemplateEngine = {
         </div>
         <div class="switcher-option ${this.currentTemplate === 'z1' ? 'active' : ''}" data-target-template="z1">
           <div class="switcher-option-info">
-            <h5>Z1: Industrial Red & Black</h5>
-            <p>Screenshot 1 Layout • High Impact</p>
-          </div>
+            <h5>Z1</h5>
+              </div>
           <span class="switcher-tag">${this.currentTemplate === 'z1' ? 'ACTIVE' : 'Z1'}</span>
         </div>
         <div class="switcher-option ${this.currentTemplate === 'z2' ? 'active' : ''}" data-target-template="z2">
           <div class="switcher-option-info">
-            <h5>Z2: Modern Digital SaaS Agency</h5>
-            <p>Screenshot 2 Layout • Red & Black Agency</p>
-          </div>
+            <h5>Z2</h5>
+               </div>
           <span class="switcher-tag">${this.currentTemplate === 'z2' ? 'ACTIVE' : 'Z2'}</span>
         </div>
       </div>
